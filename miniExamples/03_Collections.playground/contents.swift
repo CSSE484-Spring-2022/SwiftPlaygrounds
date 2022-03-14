@@ -3,24 +3,29 @@ import UIKit
 // Basics for arrays
 var names = ["Dave", "Kristy", "McKinley", "Keegan", "Bowen", "Neala"]
 
-
-
-
-
-
-
-
-
+names[1]
+names[2] = "Kingsley"
+names
 
 // Appending values
+names.append("Dubhliann")
+names.append("Fionn")
+if names.contains("Dave") {
+    print("Dave is present")
+}
 
+names += ["Bob", "Amber"]
+names
 
+names.removeLast()
+names
 
-
-
-
-
-
+names.removeAll()
+if names.isEmpty {
+    print("It is empty")
+} else {
+    print("It has values")
+}
 
 
 
@@ -40,6 +45,7 @@ teenagers.sorted(by: {
 
 // Dictionaries
 var elements = ["H": "Hydrogen", "He": "Helium", "Li": "Lithium", "Be": "Beryllium", "B": "Boron", "C": "Carbon", "N": "Nitrogen", "O": "Oxygen"]
+elements["C"]
 elements["C"]!
 elements["Z"]
 for (symbol, name) in elements {
